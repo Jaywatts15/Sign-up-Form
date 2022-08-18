@@ -21,33 +21,40 @@
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
                 <p>You <em>know</em> you want to.</p>
             </div>
-            <formfield class="form">
-                <form action="#" class="top-down">
-                    <label for="firstName">First Name:</label>
-                    <input type="text" id="firstName" name="firstName">
-                </form>
-                <form action="#" class="top-down">
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" id="lastName" name="lastName">
-                </form>
-                <form action="#" class="top-down">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                </form>
-                <form action="#" class="top-down">
-                    <label for="phoneNumber">Phone Number:</label>
-                    <input type="number" id="phoneNumber" name="phoneNumber" placeholder="000-000-0000">
-                </form>
-                <form action="#" class="top-down">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password">
-                </form>
-                <form action="#" class="top-down">
-                    <label for="confirmPassword">Confirm Password:</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword">
-                </form>
-            </formfield>
+            <div class="form">
+                <legend class="form-title">Let's Do This!</legend>
+                <div class="form-input">
+                    <form action="#" class="top-down">
+                        <label for="FirstName">First Name</label>
+                        <input type="text" id="firstName" name="FirstName" required>
+                    </form>
+                    <form action="#" class="top-down">
+                        <label for="LastName">Last Name</label>
+                        <input type="text" id="LastName" name="LastName" required>
+                    </form>
+                    <form action="#" class="top-down">
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" name="Email" placeholder="johndoe@example.com" required>
+                    </form>
+                    <form action="#" class="top-down">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="number" id="phoneNumber" name="phoneNumber" placeholder="000-000-0000" required>
+                    </form>
+                    <form action="#" class="top-down">
+                        <label for="Password">Password</label>
+                        <input type="password" id="Password" name="Password" aria-errormessage="Passwords do not match" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </form>
+                    <form action="#" class="top-down" >
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" aria-errormessage="Passwords do not match" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </form>
+                </div>
+            </div>
+            <button type="button" class="create">Create Account</button>
+            <div class="login"><p>Already have an account? <a href="#" class="login-link">Log in</a></p></div>
         </div>
     </div>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
